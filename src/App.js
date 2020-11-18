@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
+import { Todos } from './components/Todo';
+import MirageServer from './mirage';
+
+MirageServer();
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Todos />
     </div>
   );
 }
